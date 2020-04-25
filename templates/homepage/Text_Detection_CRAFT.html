@@ -15,11 +15,11 @@
 
  		 gtag('config', 'UA-110954752-1');
 		</script>
-		<title>RSA</title>
+		<title>CRAFT Text-Detection</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-loading">
 
@@ -28,7 +28,7 @@
 
 				<!-- Intro -->
 					<div id="intro">
-						<h1>RSA Encryption</h1>
+						<h1>CRAFT Text-Detection<br /></h1>
 						<ul class="actions">
 							<li><a href="#main" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
@@ -37,9 +37,9 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="RSA.html">RSA encryption</a></li>
-							<li><a href="index.html">Introduction</a></li>
-							<li><a href="Resume.html">Resume</a></li>
+						    <li class="active"><a href="Text_Detection_CRAFT">CRAFT Text-Detection</a></li>
+							<li><a href="/">Introduction</a></li>
+							<li><a href="Resume">Resume</a></li>
 						</ul>
 						<ul class="icons">
 							<li><a href="https://github.com/mayank-git-hub" class="icon fa-github"><span class="label">GitHub</span></a></li>
@@ -53,30 +53,15 @@
 						<!-- Featured Post -->
 							<article class="post featured">
 								<header class="major">
-									<span class="date">6 Dec, 2017</span>
-									<h2>RSA key encryption<br></h2>
-									<p>Wouldn't it be ideal if nobody stole anything in this world nor had any malicious intent?<br> Well we do not live in such an idealized world. So to Save my projects from all those trying to steal it,<br>
-									   I made an RSA file encryption program. The basics are simple, the implementation not so.<br><br>
-									   How it works??<br>
-									   So suppose Cooper wants to send a message to Murph from some other Galaxy. But there are some aliens trying to<br>
-									   intercept this message. So first Cooper tells Murph, "Hey I want to send a message to you". Then Murph <br>
-									   sends a public key to Cooper. But these aliens in between also intercept this key. They are like "Haha, whatever <br>
-									   send will be recieved by us. Even if you send a way to change code, we will understand it"<br>
-									   Obviously Cooper does not know whether the key has been seen by the aliens or not.<br>
-									   He used the public key and encodes the entire message and sends it to Murph. <br>
-									   And alas the aliens get the message. But wait, it is gibberish. And even though they are<br>
-									   giving it their all, they can't seem to use the public key to decode the message.<br>
-									   The message goes to Murph and Murph too recieves some gibberish message. Now how will she decode this message?? <br>
-									   Well she has an advantage over the aliens. She has a private key which enables her to decode the message easily <br >
-									   This is how any encryption works in principle.<br>									
+									<span class="date">23rd Sep, 2019</span>
+									<h2>CRAFT Text-Detection<br /></h2>
+									<p> Traditional Text Detection methods have used word-level bounding boxes for target and getting true positives. Character-Region Awareness For Text-Detection (CRAFT) uses weak-supervision for predicting character level predictions using word-level annotation. This is achieved by first training the model on a Synthetic Dataset and then fine-tuning it on a real dataset and using the transcriptions to get the character predictions.<br> The full method can be understood in <a href="https://arxiv.org/abs/1904.01941"> the original paper </a>. I reimplemented the training of CRAFT on <a href="http://github.com/autonise/craft-remade.git">github</a>
 									</p>
 								</header>
-								<a href="#" class="image fit"><img src="images/encry.jpg" alt="" /></a>
-								
 								<header class="major">
+								<a href="#" class="image fit"><img src="static/images/craft_example.gif" alt="" /></a>
 								</header>
 							</article>
-
 						<!-- Footer -->
 							<footer>
 								You can contact me through the links mentioned below -
@@ -105,15 +90,16 @@
 						</section>
 					</section>
 				</footer>
+
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="static/assets/js/jquery.min.js"></script>
+			<script src="static/assets/js/jquery.scrollex.min.js"></script>
+			<script src="static/assets/js/jquery.scrolly.min.js"></script>
+			<script src="static/assets/js/skel.min.js"></script>
+			<script src="static/assets/js/util.js"></script>
+			<script src="static/assets/js/main.js"></script>
 
 	</body>
 </html>

@@ -15,11 +15,11 @@
 
  		 gtag('config', 'UA-110954752-1');
 		</script>
-		<title>CRAFT Text-Detection</title>
+		<title>Hyper Spectral Images</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-loading">
 
@@ -28,7 +28,7 @@
 
 				<!-- Intro -->
 					<div id="intro">
-						<h1>CRAFT Text-Detection<br /></h1>
+						<h1>HyperSpectral Image Segmentation<br /></h1>
 						<ul class="actions">
 							<li><a href="#main" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
@@ -37,9 +37,9 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-						    <li class="active"><a href="Text-Detection-CRAFT.html">CRAFT Text-Detection</a></li>
-							<li><a href="index.html">Introduction</a></li>
-							<li><a href="Resume.html">Resume</a></li>
+						    <li class="active"><a href="Hyperspectral">Hyperspectral</a></li>
+							<li><a href="/">Introduction</a></li>
+							<li><a href="Resume">Resume</a></li>
 						</ul>
 						<ul class="icons">
 							<li><a href="https://github.com/mayank-git-hub" class="icon fa-github"><span class="label">GitHub</span></a></li>
@@ -53,13 +53,20 @@
 						<!-- Featured Post -->
 							<article class="post featured">
 								<header class="major">
-									<span class="date">23rd Sep, 2019</span>
-									<h2>CRAFT Text-Detection<br /></h2>
-									<p> Traditional Text Detection methods have used word-level bounding boxes for target and getting true positives. Character-Region Awareness For Text-Detection (CRAFT) uses weak-supervision for predicting character level predictions using word-level annotation. This is achieved by first training the model on a Synthetic Dataset and then fine-tuning it on a real dataset and using the transcriptions to get the character predictions.<br> The full method can be understood in <a href="https://arxiv.org/abs/1904.01941"> the original paper </a>. I reimplemented the training of CRAFT on <a href="http://github.com/autonise/craft-remade.git">github</a>
+									<span class="date">6 Dec, 2017</span>
+									<h2>Hyperspectral Image Segmentation<br /></h2>
+									<p> So given a tissue Hyperspectral image it is very time consuming for the doctors<br />
+									to annotate the epithilium, stromal and goblet cells. So we tried to automate this process.<br />
+									We used Non Negative Matrix Factorisation (NMF) and Semi Supervised NMF (SSNMF) for <br />
+									dimentionality reduction because the spectra contained too much redundant data.<br />
+									Then using different classifiers like SVM, NN, and Random Forest we tried to classify each and every pixel.<br /><br />
+									Then we moved on to using spatial information by taking windows of different length.<br />
+									This improved the accuracy by 2-3 percent. Using Regularisation in NN we could further <br />
+									increase the accuracy by 2-3 percent. <br />
 									</p>
 								</header>
 								<header class="major">
-								<a href="#" class="image fit"><img src="images/craft_example.gif" alt="" /></a>
+								<a href="#" class="image fit"><img src="static/images/joined.jpg" alt="" /></a>
 								</header>
 							</article>
 						<!-- Footer -->
@@ -94,12 +101,12 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="static/assets/js/jquery.min.js"></script>
+			<script src="static/assets/js/jquery.scrollex.min.js"></script>
+			<script src="static/assets/js/jquery.scrolly.min.js"></script>
+			<script src="static/assets/js/skel.min.js"></script>
+			<script src="static/assets/js/util.js"></script>
+			<script src="static/assets/js/main.js"></script>
 
 	</body>
 </html>
