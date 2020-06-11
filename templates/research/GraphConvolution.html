@@ -1,0 +1,53 @@
+<html>
+	<head>
+	{% include "basic/includes.html" %}
+
+	</head>
+	
+	<body>
+		{% include "basic/header.html" %}
+		<div class="container-sm">
+			<div class="row">
+				<div class="col-md-8">
+
+					<div class="shadow container bg-light mb-5">
+						<div class="row">
+							<a href="/research/GraphConvolution"><img src="/static/Images/Content/GraphConvolution/HowGCNNWorks.png" width="100%"></a>
+							<div class="container px-4 pt-5 pb-4">
+								<div class="row">
+									<div class="col">
+										<a class="hrefWithoutDecoration" href="https://arxiv.org/abs/2005.12147" target="_blank"><h2>NENET: An Edge Learnable Network for Link Prediction in Scene Text <i class="fa fa-external-link" style="font-size:12px"></i></h2></a>
+										<p>Last Updated: 27th May</p>
+										<p>Text detection in scenes based on deep neural networks have shown promising results. Instead of using word bounding box regression, recent state-of-the-art methods have started focusing on character bounding box and pixel-level prediction. This necessitates the need to link adjacent characters, which we propose in this paper using a novel Graph Neural Network (GNN) architecture that allows us to learn both node and edge features as opposed to only the node features under the typical GNN. The main advantage of using GNN for link prediction lies in its ability to connect characters which are spatially separated and have an arbitrary orientation. We show our concept on the well known SynthText dataset, achieving top results as compared to state-of-the-art methods. For in-depth understanding you can have a look at the paper on <a target="_blank" href="https://arxiv.org/abs/2005.12147">ARXIV<i class="fa fa-external-link" style="font-size:12px"></i></a> </p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- <div class="shadow container bg-light mb-5">
+						<div class="row">
+							<div class="col shadow p-4">
+								<a class="hrefWithoutDecoration" href="https://medium.com/@mayank2220singh/improving-voice-separation-by-incorporating-end-to-end-speech-recognition-c3dd57d80206?source=friends_link&sk=5fef2a9f50505ea1668685912ca95280" target="_blank"><h2>Medium Article <i class="fa fa-external-link" style="font-size:12px"></i></h2></a>
+								<a href="https://medium.com/@mayank2220singh/improving-voice-separation-by-incorporating-end-to-end-speech-recognition-c3dd57d80206?source=friends_link&sk=5fef2a9f50505ea1668685912ca95280"><img class="pt-3" src="/static/Images/Content/VoiceSeparation/medium.png" width="100%"></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="shadow container bg-light mb-5">
+						<div class="row">
+							<div class="col shadow p-4">
+								<a class="hrefWithoutDecoration" href="https://ieeexplore.ieee.org/document/9053845" target="_blank"><h2>Published Paper <i class="fa fa-external-link" style="font-size:12px"></i></h2></a>
+								<a href="https://ieeexplore.ieee.org/document/9053845"><img class="pt-3" src="/static/Images/Content/VoiceSeparation/paperSS.png" width="100%"></a>
+							</div>
+						</div>
+					</div> -->
+
+				</div>
+				{% include "basic/intro.html" %}
+			</div>
+		</div>
+		
+	</body>
+	
+</html>

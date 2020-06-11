@@ -15,6 +15,12 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+SECURE_HSTS_SECONDS = 7*24*60*60
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+SECURE_HSTS_PRELOAD = True
+SECURE_REFERRER_POLICY = 'unsafe-url'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
@@ -118,3 +124,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+defaultStatus = {
+    'statusHome': 'inactiveCustom',
+    'statusProfile': 'inactiveCustom',
+    'statusResearch': 'inactiveCustom',
+    'statusPublications': 'inactiveCustom',
+    'statusHotStuff': 'inactiveCustom',
+    'statusProjects': 'inactiveCustom',
+}
